@@ -10,10 +10,11 @@ body {
 
 #myVideo {
   position: relative;
-  right: 0;
-  bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+#mydiv{
+    
 }
 hr {
   margin-top: 1rem;
@@ -28,15 +29,14 @@ hr {
 
 }
 .mydiv {
-    top: 0; right: 0; bottom: 0; left: 0;
 background-color:rgba(139, 10, 80, 0.6);
 color: rgba(224, 224, 224, 1);
  text-align: center;
- padding-top: 100px;
- padding-left: 100px;
- padding-right: 100px;
- padding-bottom: 100px;
- 
+ padding-top: 50px;
+ padding-left: 200px;
+ padding-right: 200px;
+ padding-bottom: 50px;
+ font-family: 'Alegreya Sans SC';font-size: 22px;;
 }
 #trip {
     background-image: url("1.png");
