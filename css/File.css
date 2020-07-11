@@ -1,6 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+*:before, *:after { content: ''; }
 
 body {
   margin: 0;
@@ -13,8 +14,8 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
-#mydiv{
-    
+.newdiv {
+background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
 hr {
   margin-top: 1rem;
@@ -29,14 +30,12 @@ hr {
 
 }
 .mydiv {
-background-color:rgba(139, 10, 80, 0.6);
+background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+background-blend-mode: normal, lighten, soft-light;
 color: rgba(224, 224, 224, 1);
  text-align: center;
- padding-top: 50px;
- padding-left: 200px;
- padding-right: 200px;
  padding-bottom: 50px;
- font-family: 'Alegreya Sans SC';font-size: 22px;;
+ margin-top:-8px;
 }
 #trip {
     background-image: url("1.png");
@@ -50,9 +49,120 @@ color: rgba(224, 224, 224, 1);
     background-repeat: no-repeat;
     background-size: cover;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+
+
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+
+.divider {
+    
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+  }
+  .divider::before {
+    background: linear-gradient(to right, rgba(240, 240, 240, 0), #fff);
+    margin-right: 4vh;
+  }
+  .divider::after {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0), #fff);
+    margin-left: 4vh;
+  }
+.parallax {
+  /* The image used */
+  background-image: url("Love.jpg");
+
+  /* Set a specific height */
+  height: 400px;
+  margin-top: -110px;
+  padding-top:20px;
+  margin-bottom:40px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.mission {
+  /* The image used */
+  background-image: url("Mission.jpg");
+
+  /* Set a specific height */
+  height:900px;
+  width:10000px;
+  margin-top: 30px;
+  padding-top:20px;
+  margin-left:200px;
+  margin-right:-200px;
+  margin-bottom:50px;
+  /* Create the parallax scrolling effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.accessory {
+  height: 6px;
+  background-image: radial-gradient(
+    closest-side,
+    hsla(0, 0%, 50%, 1.0),
+    hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+}
+.accessory:after {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  display:block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width:  12px;
+  transform: rotate(45deg);
+  margin-top:  -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}
+View Compiled
+
+
