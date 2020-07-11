@@ -37,6 +37,7 @@ color: rgba(224, 224, 224, 1);
  padding-bottom: 50px;
  margin-top:-8px;
  padding-top:50px;
+  overflow: hidden;
 }
 #trip {
     background-image: url("1.png");
@@ -100,6 +101,7 @@ color: rgba(224, 224, 224, 1);
   height: 400px;
   margin-top: -110px;
   padding-top:20px;
+  padding-bottom:-30px;
   margin-bottom:40px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -114,7 +116,7 @@ color: rgba(224, 224, 224, 1);
   /* Set a specific height */
   height:800px;
 
-
+ overflow: hidden;
   /* Create the parallax scrolling effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
