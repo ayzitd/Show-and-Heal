@@ -51,12 +51,7 @@ color: rgba(224, 224, 224, 1);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.column {
-  float: left;
-  width: 33.33%;
-  padding-left: 25px;
-  padding-right: 25px;
-}
+
 
 /* Clear floats after the columns */
 .row:after {
